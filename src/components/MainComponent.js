@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import FiveDayForcast from './FiveDayForcast';
 import Location from './LocationComponent';
+import { CurrentLocation } from './CurrentLocation';
 
 
 
@@ -15,14 +16,7 @@ export default class Main extends Component {
                     <hr />
                     <div className="header">
                     <Row>
-                        <Col md={6}>
-                            <p>Weather Image</p>
-                            <p>deg</p>
-                            </Col>
-                        <Col md={6}>
-                            <p>City , State</p>
-                            <p>Weather Forcast</p>
-                            </Col>
+                        <CurrentLocation />
                     </Row>
                     </div>
                     <hr />
