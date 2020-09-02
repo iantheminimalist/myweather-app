@@ -11,7 +11,7 @@ export const CurrentLocation = () => {
     const [info , setInfo ] = useState([]);
 
     useEffect(async () => {
-        const data = await axios.get(`https://api.weatherbit.io/v2.0/current&key=5296eee14eb94455a5ed3220fcd31fe2&lat=38.123&lon=-78.543`);
+        const data = await axios.get(`https://api.weatherbit.io/v2.0/current&key=${key}&lat=38.123&lon=-78.543`);
         setInfo(info.data).json();
         console.log(info.data);
     }, []);
